@@ -6,7 +6,7 @@
 #    By: agarcia2 <agarcia2@student.42barcelona.co> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/20 21:25:00 by agarcia2          #+#    #+#              #
-#    Updated: 2025/11/20 21:25:00 by agarcia2         ###   ########.fr        #
+#    Updated: 2025/12/16 17:17:25 by agarcia2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRCS		= get_next_line.c \
 OBJS		= $(SRCS:.c=.o)
 
 CC		= cc
-CFLAGS		= -Wall -Wextra -Werror
+CFLAGS		= -Wall -Wextra -Werror # -fsanitize=undefined,address
 AR		= ar rcs
 RM		= rm -f
 
